@@ -9,9 +9,10 @@ SYNTAX:
 az vm extension set \
   --resource-group <resource-group-name> \
   --vm-name <vm-name> \
-  --name customScript \
-  --publisher Microsoft.Azure.Extensions \
-  --settings '{"fileUris": ["fileUri"],"commandToExecute": "./<script-file>.sh"}'     	
+  --name CustomScriptForLinux \
+  --version 1.0 \
+  --publisher Microsoft.OSTCExtensions \
+  --settings '{"fileUris": ["fileUri"],"commandToExecute": "bash <script-file>.sh"}'     	
 KEYWORDS: Azure, Custom, Script, Extension, Linux
 
 LICENSE:
