@@ -58,7 +58,7 @@ testFile="$targetDir/testFile"
 testMessage="This is a test file used to demonstrate executing a very simple script using Azure Linux custom script extensions."
 
 # MAIN
-# Create download and installation for OMI Server
+# Create new target directory if necessary
 if [ ! -d "$targetDir" ]; then
     mkdir "$targetDir"
 fi
